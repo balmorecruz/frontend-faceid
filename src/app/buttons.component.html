@@ -1,0 +1,30 @@
+<div class="buttons-container">
+    <div class="register-text-container">
+      <input class="register-text" type="text" placeholder="Ingrese el nombre de usuario" [(ngModel)]="value">
+    </div>
+    <div class="register-ok-container">
+      <button class="register-ok-button" (click)="registerOk()">Aceptar</button>
+    </div>
+    <div class="register-cancel-container">
+      <button class="register-cancel-button" (click)="cancelRegistration()">Cancelar</button>
+    </div>
+    <div class="login-container">
+      <button class="login-button" (click)="sendImgLogin.emit()">Iniciar sesión</button>
+    </div>
+    <div class="logout-container">
+      <button class="logout-button" (click)="sendImgLogout.emit()">Cerrar sesión</button>
+    </div>
+    <div class="admin-container">
+      <button class="admin-button" (click)="showWebcam.emit()">Administrar</button>
+    </div>
+    <div class="register-container">
+      <button class="register-button" (click)="showImg.emit()">Registrarse</button>
+    </div>
+    <div class="goback-container">
+      <button class="goback-button" (click)="showWebcam.emit()">Volver</button>
+    </div>
+    <div class="download-container">
+      <button class="download-button" (click)="downloadLogs.emit()">Descargar logs</button>
+    </div>
+  </div>
+  
